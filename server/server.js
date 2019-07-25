@@ -1,4 +1,4 @@
-// node 后端服务器
+
 const mysql = require('mysql')
 const express = require('express')
 const app = express()
@@ -50,6 +50,6 @@ io.on('connection', function (socket) {
   })
 })
 
-// 监听端口
+
 server.listen(3000)
 console.log('success listen at port:3000......')
