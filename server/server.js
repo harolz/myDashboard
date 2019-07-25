@@ -32,7 +32,7 @@ io.on('connection', function (socket) {
         io.emit('message', resultjson)
       }
     })
-
+    //fresh every 10 seconds
     setInterval(function () {
       conn.query(sql, function (err, result) {
         if (err) {
@@ -46,7 +46,7 @@ io.on('connection', function (socket) {
           }
         }
       })
-    }, 3000)
+    }, 10000)
   })
 })
 
