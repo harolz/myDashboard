@@ -43,11 +43,7 @@ cd db/
 ```
 
 ```bash
-docker-compose up
-```
-
-```bash
-docker exec database.dev bash /tmp/initDB.sh
+docker-compose up 
 ```
 
 To run the web socket server:
